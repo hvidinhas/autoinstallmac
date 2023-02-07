@@ -226,14 +226,11 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 sudo softwareupdate -ia
 
-echo "" 
 echo ""
-echo " ██████  ██████  ███    ██  ██████ ██      ██    ██ ██ ██████   ██████      ██ ";
-echo "██      ██    ██ ████   ██ ██      ██      ██    ██ ██ ██   ██ ██    ██     ██ ";
-echo "██      ██    ██ ██ ██  ██ ██      ██      ██    ██ ██ ██   ██ ██    ██     ██ ";
-echo "██      ██    ██ ██  ██ ██ ██      ██      ██    ██ ██ ██   ██ ██    ██        ";
-echo " ██████  ██████  ██   ████  ██████ ███████  ██████  ██ ██████   ██████      ██ ";
+echo -e "\033[1;32mCONCLUIDO - REINICIANDO EM 2MIN \033[0m"
 echo ""
-echo "" 
+
+# REINICIANDO O MAC
+sleep 120; sudo reboot
 
 
