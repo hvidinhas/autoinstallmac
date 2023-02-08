@@ -214,6 +214,11 @@ defaults write com.apple.dock ResetLaunchPad -bool true;
 
 Killall Dock;
 
+# CRIANDO LINKS SIMBOLICOS PARA OS SCRIPTS
+sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/backupmac_rclone.sh /usr/local/bin/backup;
+
+sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/googlesync_mac.sh /usr/local/bin/googlesync;
+
 # INSTALACAO OH-MY-ZSH
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
