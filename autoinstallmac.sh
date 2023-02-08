@@ -34,7 +34,6 @@ brew install --cask i1profiler;
 brew install --cask inkscape;
 brew install --cask iterm2;
 brew install --cask krita;
-brew install --cask netnewswire;
 brew install rclone;
 brew install --cask rustdesk;
 brew install speedtest --force;
