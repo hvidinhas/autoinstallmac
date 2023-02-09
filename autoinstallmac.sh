@@ -27,6 +27,7 @@ brew install --cask balenaetcher;
 brew install --cask caffeine;
 brew install --cask copyclip;
 brew install --cask discord;
+brew install exa;
 brew install --cask firefox;
 brew install git;
 brew install --cask google-chrome;
