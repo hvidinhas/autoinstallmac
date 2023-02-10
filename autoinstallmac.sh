@@ -33,6 +33,7 @@ brew install --cask firefox;
 brew install git;
 brew install --cask i1profiler;
 brew install --cask iterm2;
+brew install --cask microsoft-edge;
 brew install rclone;
 brew install --cask rustdesk;
 brew install speedtest --force;
