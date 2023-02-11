@@ -48,6 +48,7 @@ brew install --cask visual-studio-code;
 brew install --cask vlc;
 brew install wget;
 brew install --cask whatsapp;
+brew install --cask vmware-fusion;
 
 
 #INSTALACAO FONTE PARA TERMINAL
