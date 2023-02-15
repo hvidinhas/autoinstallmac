@@ -35,7 +35,6 @@ brew install --cask microsoft-edge;
 brew install neovim;
 brew install rclone;
 brew install --cask rustdesk;
-brew install rust;
 brew install speedtest --force;
 brew install --cask spotify;
 brew install --cask syncovery;
@@ -56,6 +55,14 @@ sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/mast
 open Downloads/MesloLGS\ NF\ Regular.ttf;
 
 # --------------- Modificações no Sistema --------------- #
+
+
+echo ""
+echo -e "\033[1;32mModificações no Sistema \033[0m"
+echo ""
+
+# Tempo para instalar fonte antes de começar as mudanças
+sleep 60;
 
 
 # MINIMIZAR OS PROGRAMAS NA DOCK
