@@ -34,6 +34,7 @@ brew install --cask iterm2;
 brew install --cask microsoft-edge;
 brew install rclone;
 brew install --cask rustdesk;
+brew install rust;
 brew install speedtest --force;
 brew install --cask spotify;
 brew install --cask syncovery;
@@ -53,7 +54,6 @@ brew install --cask vmware-fusion;
 sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
 
 open Downloads/MesloLGS\ NF\ Regular.ttf;
-
 
 # --------------- Modificações no Sistema --------------- #
 
