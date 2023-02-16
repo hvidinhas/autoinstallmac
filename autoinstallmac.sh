@@ -42,11 +42,11 @@ brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask transmission;
 brew install --cask veracrypt;
+brew install --cask virtualbox;
 brew install --cask visual-studio-code;
 brew install --cask vlc;
 brew install wget;
 brew install --cask whatsapp;
-brew install --cask vmware-fusion;
 
 # --------------- Baixar fonte para iTerm2 --------------- #
 
@@ -58,7 +58,7 @@ open Downloads/MesloLGS\ NF\ Regular.ttf;
 
 
 echo ""
-echo -e "\033[1;32mModificações no Sistema \033[0m"
+echo "\033[1;32mModificações no Sistema \033[0m"
 echo ""
 
 # Tempo para instalar fonte antes de começar as mudanças
@@ -156,7 +156,7 @@ rsync -atrP /Volumes/Bifrost/Backups/Arquivos\ e\ Bookmarks/SourceCodePro+Powerl
 # --------------- Restore de arquivos --------------- #
 
 echo ""
-echo -e "\033[1;32mTRANSFERENCIA DE ARQUIVOS \033[0m"
+echo "\033[1;32mTRANSFERENCIA DE ARQUIVOS \033[0m"
 echo ""
 
 # restore arquivos de usuário
@@ -198,21 +198,16 @@ sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/backupmac_rclone.sh /usr/loc
 
 sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/googlesync_mac.sh /usr/local/bin/googlesync;
 
-
-# --------------- Oh-My-ZSH --------------- #
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-
-# --------------- Powerlevel10K --------------- #
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-
 # --------------- Atualização de Sistema --------------- #
 
-sudo softwareupdate -ia
+sudo softwareupdate -ia;
+
+# --------------- Oh-My-ZSH --------------- #
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+
 
 echo ""
-echo -e "\033[1;32mCONCLUIDO - REINICIANDO EM 2MIN \033[0m"
+echo "\033[1;32mCONCLUIDO - REINICIANDO EM 2MIN \033[0m"
 echo ""
 
 # --------------- Reiniciar Mac --------------- #
