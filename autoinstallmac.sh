@@ -44,6 +44,7 @@ brew install --cask veracrypt;
 brew install --cask virtualbox;
 brew install --cask visual-studio-code;
 brew install --cask vlc;
+brew install --cask vmware-fusion;
 brew install wget;
 brew install --cask whatsapp;
 
@@ -61,7 +62,7 @@ echo "\033[1;32mModificações no Sistema \033[0m"
 echo ""
 
 # Tempo para instalar fonte antes de começar as mudanças
-sleep 60;
+sleep 30;
 
 
 # MINIMIZAR OS PROGRAMAS NA DOCK
