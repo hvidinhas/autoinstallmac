@@ -7,12 +7,11 @@ echo "██╔══██║██║   ██║   ██║   ██║   �
 echo "██║  ██║╚██████╔╝   ██║   ╚██████╔╝    ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗███████╗    ██║ ╚═╝ ██║██║  ██║╚██████╗";
 echo "╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝     ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝";
 echo "                                                                                                                            ";
-echo -e "\033[1;32mQual local você está?: \033[0m"
+echo "\033[1;32mQual local você está?: \033[0m"
 echo ""
 echo "1 - Home Office"
 echo "2 - Remoto"
 echo ""
-
 read opcao
 
 # --------------- Pedir senha do Admin antes --------------- #
@@ -58,6 +57,7 @@ brew install --cask inkscape;
 brew install --cask i1profiler;
 brew install --cask iterm2;
 brew install --cask mos;
+brew install --cask microsoft-edge;
 brew install neovim;
 brew install rclone;
 brew install speedtest --force;
@@ -198,7 +198,7 @@ sleep 2;
 case $opcao in
     1)
         if [[ $opcao == "1" ]]; then
-	echo -e "\033[1;32mBackup Local: \033[0m"
+	echo "\033[1;32mBackup Local: \033[0m"
 	# --- Inserir opção de restore local#
 	else
             echo "Opção inválida!"
@@ -206,14 +206,14 @@ case $opcao in
         ;;
      2)
           if [[ $opcao="2" ]]; then
-	echo -e "\033[1;32mBackup Remoto: \033[0m"
+	echo "\033[1;32mBackup Remoto: \033[0m"
     	# --- Inserir opção de restore remoto#
 	else
             echo "Opção inválida!"
         fi
         ;;
     *)
-        echo -e "\033[1;31m OPÇÃO INVÁLIDA! Escolha entre HOME OFFICE ou EXTERNO. \033[0m"
+        echo "\033[1;31m OPÇÃO INVÁLIDA! Escolha entre HOME OFFICE ou EXTERNO. \033[0m"
         ;;
 	esac
 
