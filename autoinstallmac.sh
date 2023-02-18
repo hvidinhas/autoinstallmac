@@ -194,9 +194,12 @@ Killall Dock;
 
 # --------------- Criando links símbolicos --------------- #
 
-sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/backupmac_rclone.sh /usr/local/bin/backup;
 
+sudo ln -s /Users/hvidinhas/Documents/Codes/Backup\ Mac/backupmac.sh /usr/local/bin/backup;
 sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/googlesync_mac.sh /usr/local/bin/googlesync;
+
+sudo chown -v hvidinhas:staff /usr/local/bin/backup;
+sudo chown -v hvidinhas:staff /usr/local/bin/googlesync;
 
 # --------------- Atualização de Sistema --------------- #
 
