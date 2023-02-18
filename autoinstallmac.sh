@@ -8,6 +8,16 @@ sudo -v
 
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+echo "";
+echo "██╗  ██╗ ██████╗ ███╗   ███╗███████╗    ██████╗ ██████╗ ███████╗██╗    ██╗";
+echo "██║  ██║██╔═══██╗████╗ ████║██╔════╝    ██╔══██╗██╔══██╗██╔════╝██║    ██║";
+echo "███████║██║   ██║██╔████╔██║█████╗      ██████╔╝██████╔╝█████╗  ██║ █╗ ██║";
+echo "██╔══██║██║   ██║██║╚██╔╝██║██╔══╝      ██╔══██╗██╔══██╗██╔══╝  ██║███╗██║";
+echo "██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗    ██████╔╝██║  ██║███████╗╚███╔███╔╝";
+echo "╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ";
+echo "                                                                          ";
+
+sleep 2;
 
 # --------------- Instalação Homebrew --------------- #
 
@@ -56,10 +66,14 @@ open Downloads/MesloLGS\ NF\ Regular.ttf;
 
 # --------------- Modificações no Sistema --------------- #
 
-
-echo ""
-echo "\033[1;32mModificações no Sistema \033[0m"
-echo ""
+echo"";
+echo " █████╗      ██╗██╗   ██╗███████╗████████╗███████╗    ███████╗██╗███████╗████████╗███████╗███╗   ███╗ █████╗ ";
+echo "██╔══██╗     ██║██║   ██║██╔════╝╚══██╔══╝██╔════╝    ██╔════╝██║██╔════╝╚══██╔══╝██╔════╝████╗ ████║██╔══██╗";
+echo "███████║     ██║██║   ██║███████╗   ██║   █████╗      ███████╗██║███████╗   ██║   █████╗  ██╔████╔██║███████║";
+echo "██╔══██║██   ██║██║   ██║╚════██║   ██║   ██╔══╝      ╚════██║██║╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║██╔══██║";
+echo "██║  ██║╚█████╔╝╚██████╔╝███████║   ██║   ███████╗    ███████║██║███████║   ██║   ███████╗██║ ╚═╝ ██║██║  ██║";
+echo "╚═╝  ╚═╝ ╚════╝  ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝    ╚══════╝╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝";
+echo "                                                                                                             ";
 
 # Tempo para instalar fonte antes de começar as mudanças
 sleep 30;
@@ -154,10 +168,16 @@ rsync -atrP /Volumes/Bifrost/Backups/Arquivos\ e\ Bookmarks/SourceCodePro+Powerl
 
 
 # --------------- Restore de arquivos --------------- #
+echo ""
+echo "██████╗ ███████╗███████╗████████╗ ██████╗ ██████╗ ███████╗     █████╗ ██████╗  ██████╗ ██╗   ██╗██╗██╗   ██╗ ██████╗ ███████╗";
+echo "██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗██╔════╝    ██╔══██╗██╔══██╗██╔═══██╗██║   ██║██║██║   ██║██╔═══██╗██╔════╝";
+echo "██████╔╝█████╗  ███████╗   ██║   ██║   ██║██████╔╝█████╗      ███████║██████╔╝██║   ██║██║   ██║██║██║   ██║██║   ██║███████╗";
+echo "██╔══██╗██╔══╝  ╚════██║   ██║   ██║   ██║██╔══██╗██╔══╝      ██╔══██║██╔══██╗██║▄▄ ██║██║   ██║██║╚██╗ ██╔╝██║   ██║╚════██║";
+echo "██║  ██║███████╗███████║   ██║   ╚██████╔╝██║  ██║███████╗    ██║  ██║██║  ██║╚██████╔╝╚██████╔╝██║ ╚████╔╝ ╚██████╔╝███████║";
+echo "╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═╝ ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═════╝ ╚══════╝";
+echo "";
 
-echo ""
-echo "\033[1;32mTRANSFERENCIA DE ARQUIVOS \033[0m"
-echo ""
+sleep 2;
 
 # restore arquivos de usuário
 sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
@@ -195,11 +215,9 @@ Killall Dock;
 # --------------- Criando links símbolicos --------------- #
 
 
-sudo ln -s /Users/hvidinhas/Documents/Codes/Backup\ Mac/backupmac.sh /usr/local/bin/backup;
-sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/googlesync_mac.sh /usr/local/bin/googlesync;
+sudo ln -s /Users/hvidinhas/Documents/Codes/BackupMac/backupmac.sh /usr/local/bin/backup;
 
 sudo chown -v hvidinhas:staff /usr/local/bin/backup;
-sudo chown -v hvidinhas:staff /usr/local/bin/googlesync;
 
 # --------------- Atualização de Sistema --------------- #
 
@@ -208,9 +226,16 @@ sudo softwareupdate -ia;
 # --------------- Oh-My-ZSH --------------- #
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 
-
 echo ""
-echo "\033[1;32mCONCLUIDO - REINICIANDO EM 2MIN \033[0m"
+echo " ██████╗ ██████╗ ███╗   ██╗ ██████╗██╗     ██╗   ██╗██╗██████╗  ██████╗ ";
+echo "██╔════╝██╔═══██╗████╗  ██║██╔════╝██║     ██║   ██║██║██╔══██╗██╔═══██╗";
+echo "██║     ██║   ██║██╔██╗ ██║██║     ██║     ██║   ██║██║██║  ██║██║   ██║";
+echo "██║     ██║   ██║██║╚██╗██║██║     ██║     ██║   ██║██║██║  ██║██║   ██║";
+echo "╚██████╗╚██████╔╝██║ ╚████║╚██████╗███████╗╚██████╔╝██║██████╔╝╚██████╔╝";
+echo " ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝╚══════╝ ╚═════╝ ╚═╝╚═════╝  ╚═════╝ ";
+echo "                                                                        ";
+echo ""
+echo "REINICIANDO EM 2MIN"
 echo ""
 
 # --------------- Reiniciar Mac --------------- #
