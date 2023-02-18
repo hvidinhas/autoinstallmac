@@ -1,7 +1,22 @@
 #!bin/bash
+echo ""
+echo " █████╗ ██╗   ██╗████████╗ ██████╗     ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗         ███╗   ███╗ █████╗  ██████╗";
+echo "██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗    ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║     ██║         ████╗ ████║██╔══██╗██╔════╝";
+echo "███████║██║   ██║   ██║   ██║   ██║    ██║██╔██╗ ██║███████╗   ██║   ███████║██║     ██║         ██╔████╔██║███████║██║     ";
+echo "██╔══██║██║   ██║   ██║   ██║   ██║    ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██║         ██║╚██╔╝██║██╔══██║██║     ";
+echo "██║  ██║╚██████╔╝   ██║   ╚██████╔╝    ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗███████╗    ██║ ╚═╝ ██║██║  ██║╚██████╗";
+echo "╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝     ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝";
+echo "                                                                                                                            ";
+echo -e "\033[1;32mQual local você está?: \033[0m"
+echo ""
+echo "1 - Home Office"
+echo "2 - Remoto"
+echo ""
+
+read opcao
 
 # --------------- Pedir senha do Admin antes --------------- #
-
+echo "Insira senha de admin para iniciar:"
 sudo -v
 
 # --------------- Manter permissão de admin até o fim do script --------------- #
@@ -178,6 +193,29 @@ echo "╚═╝  ╚═╝╚══════╝╚══════╝   ╚
 echo "";
 
 sleep 2;
+
+case $opcao in
+    1)
+        if [[ $opcao == "1" ]]; then
+	echo -e "\033[1;32mBackup Local: \033[0m"
+	# --- Inserir opção de restore local#
+	else
+            echo "Opção inválida!"
+	fi
+        ;;
+     2)
+          if [[ $opcao="2" ]]; then
+	echo -e "\033[1;32mBackup Remoto: \033[0m"
+    	# --- Inserir opção de restore remoto#
+	else
+            echo "Opção inválida!"
+        fi
+        ;;
+    *)
+        echo -e "\033[1;31m OPÇÃO INVÁLIDA! Escolha entre HOME OFFICE ou EXTERNO. \033[0m"
+        ;;
+	esac
+
 
 # restore arquivos de usuário
 sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
