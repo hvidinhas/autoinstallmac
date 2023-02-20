@@ -56,6 +56,7 @@ brew install gite
 brew install --cask inkscape;
 brew install --cask i1profiler;
 brew install --cask iterm2;
+brew install --cask krita;
 brew install --cask mos;
 brew install --cask microsoft-edge;
 brew install neovim;
