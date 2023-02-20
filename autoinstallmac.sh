@@ -199,16 +199,53 @@ sleep 2;
 case $opcao in
     1)
         if [[ $opcao == "1" ]]; then
-	echo "\033[1;32mBackup Local: \033[0m"
-	# --- Inserir opção de restore local#
+	echo "\033[1;32mRestore Local: \033[0m"
+    # restore arquivos de usuário
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
+
+    # restore de arquivos de preferencias
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
+
+    # restore de arquivos de Application Support
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
+    sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
 	else
             echo "Opção inválida!"
 	fi
         ;;
      2)
           if [[ $opcao="2" ]]; then
-	echo "\033[1;32mBackup Remoto: \033[0m"
+	echo "\033[1;32mRestore Remoto: \033[0m"
     	# --- Inserir opção de restore remoto#
+        # restore arquivos de usuário
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
+
+    # restore de arquivos de preferencias
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
+
+    # restore de arquivos de Application Support
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
+    sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
 	else
             echo "Opção inválida!"
         fi
@@ -218,49 +255,19 @@ case $opcao in
         ;;
 	esac
 
-
-# restore arquivos de usuário
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
-
-# Mantendo uma linha do modo antigo para refazer se necessário
-#sudo rsync -atrP /Volumes/Bifrost/Backups/hvidinhas/Desktop/ /Users/hvidinhas/Desktop/;
-
-# restore de arquivos de preferencias
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
-
-# restore de arquivos de Application Support
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
-sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
-
-
 # --------------- Organizar programas e atualizar a Dock --------------- #
-
 # RESET LAUCHPAD
 defaults write com.apple.dock ResetLaunchPad -bool true;
-
 
 # REINICIAR DOCK
 Killall Dock;
 
 # --------------- Criando links símbolicos --------------- #
-
-
 sudo ln -s /Users/hvidinhas/Documents/Codes/BackupMac/backupmac.sh /usr/local/bin/backup;
 
 sudo chown -v hvidinhas:staff /usr/local/bin/backup;
 
 # --------------- Atualização de Sistema --------------- #
-
 sudo softwareupdate -ia;
 
 # --------------- Oh-My-ZSH --------------- #
