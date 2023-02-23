@@ -235,8 +235,37 @@ echo ""
 sleep 2;
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 
+# --------------- Atualização de Sistema --------------- #
+echo "\033[1;32mDESEJA ATUALIZAR O MAC OS?: \033[0m"
+echo ""
+echo "s - SIM"
+echo "n - NÃO"
+echo ""
+read update
+
+case $update in
+    1)
+        if [[ $update == "s" ]]; then
+	echo -e "\033[5;32mATUALIZANDO MAC OS: \033[0m"
+    echo ""
+	sudo softwareupdate -ia;
+	else
+            echo "Opção inválida!"
+	fi
+        ;;
+    2)
+          if [[ $update="n" ]]; then
+	echo -e "\033[5;32mSEM ATUALIZAÇÃO \033[0m"
+    else
+            echo "Opção inválida!"
+        fi
+        ;;
+    *)
+        echo -e "\033[5;31m OPÇÃO INVÁLIDA! Escolha entre S ou N. \033[0m"
+        ;;
+esac
 # --------------- Conclusão do script e reinicio do Mac --------------- #
-sleep 5;
+sleep 2;
 echo ""
 echo " ██████╗ ██████╗ ███╗   ██╗ ██████╗██╗     ██╗   ██╗██╗██████╗  ██████╗ ";
 echo "██╔════╝██╔═══██╗████╗  ██║██╔════╝██║     ██║   ██║██║██╔══██╗██╔═══██╗";
@@ -250,5 +279,3 @@ echo "\033[5;31mREINICIANDO EM DOIS MINUTOS. \033[0m"
 echo ""
 # --------------- Reiniciar Mac --------------- #
 sleep 120; sudo reboot
-
-
