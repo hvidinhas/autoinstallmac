@@ -34,7 +34,7 @@ sleep 2;
 
 # --------------- Instalação via Homebrew --------------- #
 echo ""
-echo "\033[5;32mINSTALL APPS BREW \033[0m"
+echo "\033[5;32mINSTALL APPS HOME BREW \033[0m"
 echo ""
 sleep 2;
 brew tap teamookla/speedtest;
@@ -63,7 +63,6 @@ brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask transmission;
 brew install --cask veracrypt;
-brew install --cask virtualbox;
 brew install --cask visual-studio-code;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
@@ -88,8 +87,6 @@ defaults write com.apple.dock mineffect -string suck;
 
 # MODIFICAR O NOME DO COMPUTADOR
 sudo scutil --set ComputerName "CARA DA TI" && \;
-sudo scutil --set HostName "CARA DA TI" && \;
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "CARA DA TI";
 
 # LIGAR TAP TO CLICK TRACKPAD
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true;
@@ -160,7 +157,7 @@ sleep 2;
 case $opcao in
     1)
         if [[ $opcao == "1" ]]; then
-	echo "\033[5;32mRESTORE LOCAL: \033[0m"
+	echo "\033[5;32mRESTORE LOCAL DE ARQUIVOS: \033[0m"
     echo ""
         # restore arquivos de usuário
         sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
@@ -187,7 +184,7 @@ case $opcao in
         ;;
      2)
           if [[ $opcao="2" ]]; then
-    echo "\033[5;32mRESTORE REMOTO: \033[0m"
+    echo "\033[5;32mRESTORE REMOTO DE ARQUIVOS: \033[0m"
     echo ""
     	# --- Inserir opção de restore remoto#
         # restore arquivos de usuário
@@ -234,6 +231,7 @@ echo "\033[5;32mINSTALANDO OH MY ZSH \033[0m"
 echo ""
 sleep 2;
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+exit 0;
 
 # --------------- Atualização de Sistema --------------- #
 echo "\033[1;32mDESEJA ATUALIZAR O MAC OS?: \033[0m"
@@ -244,7 +242,7 @@ echo ""
 read update
 
 case $update in
-    1)
+    s)
         if [[ $update == "s" ]]; then
 	echo -e "\033[5;32mATUALIZANDO MAC OS: \033[0m"
     echo ""
@@ -253,7 +251,7 @@ case $update in
             echo "Opção inválida!"
 	fi
         ;;
-    2)
+    n)
           if [[ $update="n" ]]; then
 	echo -e "\033[5;32mSEM ATUALIZAÇÃO \033[0m"
     else
