@@ -38,7 +38,6 @@ brew tap teamookla/speedtest;
 brew update;
 brew install --cask anydesk;
 brew install --cask appcleaner;
-brew install --cask balenaetcher;
 brew install bat;
 brew install --cask caffeine;
 brew install --cask copyclip;
@@ -61,7 +60,6 @@ brew install --cask the-unarchiver;
 brew install --cask transmission;
 brew install --cask veracrypt;
 brew install --cask visual-studio-code;
-brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install wget;
 brew install --cask whatsapp;
@@ -83,7 +81,7 @@ sleep 2;
 defaults write com.apple.dock mineffect -string suck;
 
 # MODIFICAR O NOME DO COMPUTADOR
-sudo scutil --set ComputerName "CARA DA TI" && \;
+sudo scutil --set ComputerName "CARA DA TI";
 
 # LIGAR TAP TO CLICK TRACKPAD
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true;
@@ -221,14 +219,6 @@ Killall Dock;
 # --------------- Criando links símbolicos --------------- #
 sudo ln -s /Users/hvidinhas/Documents/Codes/BackupMac/backupmac.sh /usr/local/bin/backup;
 sudo chown -v hvidinhas:staff /usr/local/bin/backup;
-
-# --------------- Instalando Oh-My-ZSH --------------- #
-echo ""
-echo "\033[5;32mINSTALANDO OH MY ZSH \033[0m"
-echo ""
-sleep 2;
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-exit 0;
 
 # --------------- Atualização de Sistema --------------- #
 echo "\033[1;32mDESEJA ATUALIZAR O MAC OS?: \033[0m"
