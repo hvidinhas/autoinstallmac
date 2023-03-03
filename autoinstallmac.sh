@@ -52,6 +52,7 @@ brew install --cask krita;
 brew install --cask mos;
 brew install neovim;
 brew install rclone;
+brew install rust;
 brew install speedtest --force;
 brew install --cask spotify;
 brew install --cask syncovery;
