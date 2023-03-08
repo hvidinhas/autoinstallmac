@@ -66,6 +66,7 @@ brew install --cask transmission;
 brew install --cask veracrypt;
 brew install --cask visual-studio-code;
 brew install --cask vmware-fusion;
+brew install yarn;
 brew install wget;
 brew install --cask whatsapp;
 
