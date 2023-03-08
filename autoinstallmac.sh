@@ -66,6 +66,9 @@ brew install wget;
 brew install --cask whatsapp;
 
 # --------------- Baixar fonte para iTerm2 --------------- #
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+
 sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
 open Downloads/MesloLGS\ NF\ Regular.ttf;
 
