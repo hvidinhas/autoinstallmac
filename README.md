@@ -2,21 +2,14 @@
 ## Script de configuração pós instalação
 
 
-
-
 Script para uma instalação e configuração "automatizada" de todos os sofwares, configurações, recursos após formatação.
 
 
+## Testada nas versões:
 
+##### macOS Montery (versão 12.6.3)
 
-## Versões
-
-<p>macOS Montery (versão 12.6.3)</p>
-
-<p>macOS Big Sur (versão 11.7.4)</p>
-
-
-
+##### macOS Big Sur (versão 11.7.4)
 
 ## Como usar
 
