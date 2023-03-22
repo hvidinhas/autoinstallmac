@@ -52,6 +52,7 @@ brew install --cask iterm2;
 brew install --cask krita;
 brew install npm;
 brew install --cask mos;
+brew install --cask microsoft-office;
 brew install neovim;
 brew install node;
 brew install rclone;
