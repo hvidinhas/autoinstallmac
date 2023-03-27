@@ -47,6 +47,7 @@ brew install exa;
 brew install --cask firefox;
 brew install git;
 brew install --cask inkscape;
+brew install --cask iina;
 brew install --cask i1profiler;
 brew install --cask iterm2;
 brew install --cask krita;
