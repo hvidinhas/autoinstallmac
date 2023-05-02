@@ -43,7 +43,7 @@ brew install --cask caffeine;
 brew install --cask copyclip;
 brew install --cask discord;
 brew install cargo-make;
-brew install --cask mullvad-browser;
+brew install --cask firefox;
 brew install exa;
 brew install git;
 brew install --cask iina;
@@ -164,24 +164,24 @@ case $opcao in
 	echo "\033[5;32mRESTORE LOCAL DE ARQUIVOS: \033[0m"
     echo ""
         # restore arquivos de usuário
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
 
         # restore de arquivos de preferencias
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
 
         # restore de arquivos de Application Support
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
-        sudo rsync -atrP srvadmin@bifrostsrv:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
+        sudo rsync -atrP srvadmin@muspelheim:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
 	else
             echo "Opção inválida!"
 	fi
