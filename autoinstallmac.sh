@@ -41,7 +41,6 @@ brew install --cask appcleaner;
 brew install bat;
 brew install --cask caffeine;
 brew install --cask copyclip;
-brew install --cask discord;
 brew install cargo-make;
 brew install --cask firefox;
 brew install exa;
@@ -78,7 +77,7 @@ sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/mast
 open Downloads/MesloLGS\ NF\ Regular.ttf;
 
 # Tempo para instalar fonte antes de começar as mudanças
-sleep 30;
+sleep 20;
 
 # --------------- Modificações no Sistema --------------- #
 
