@@ -52,6 +52,7 @@ brew install npm;
 brew install --cask microsoft-office;
 brew install neovim;
 brew install node;
+brew install --cask onyx;
 brew install rclone;
 brew install rust;
 brew install speedtest --force;
