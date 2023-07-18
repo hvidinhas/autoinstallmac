@@ -70,10 +70,6 @@ brew install yarn;
 brew install wget;
 
 
-# --------------- Instalar LunarVim --------------- #
-LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh);
-
-
 # --------------- Baixar fonte para iTerm2 --------------- #
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
