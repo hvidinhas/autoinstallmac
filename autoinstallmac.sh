@@ -45,10 +45,10 @@ brew install cargo-make;
 brew install --cask firefox;
 brew install exa;
 brew install git;
+brew install --cask google-chrome;
 brew install --cask i1profiler;
 brew install --cask iterm2;
 brew install --cask maccy;
-brew install --cask microsoft-office;
 brew install npm;
 brew install neovim;
 brew install node;
@@ -68,7 +68,6 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
-brew install --cask whatsapp;
 
 
 # --------------- Instalar LunarVim --------------- #
@@ -166,16 +165,8 @@ sleep 2;
 case $opcao in
     1)
         if [[ $opcao == "1" ]]; then
-	echo "\033[5;32mRESTORE LOCAL DE ARQUIVOS: \033[0m"
+	echo "\033[5;32mRESTORE LOCAL DE PREFERENCIAS: \033[0m"
     echo ""
-        # restore arquivos de usuário
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
-
         # restore de arquivos de preferencias
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
@@ -195,15 +186,6 @@ case $opcao in
           if [[ $opcao="2" ]]; then
     echo "\033[5;32mRESTORE REMOTO DE ARQUIVOS: \033[0m"
     echo ""
-    	# --- Inserir opção de restore remoto#
-        # restore arquivos de usuário
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Desktop/ ~/Desktop/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Documents/ ~/Documents/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Downloads/ ~/Downloads/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Movies/ ~/Movies/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Music/ ~/Music/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Pictures/ ~/Pictures/;
-
         # restore de arquivos de preferencias
         sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
         sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
@@ -269,7 +251,7 @@ echo "";
 echo "";
 echo "\033[1;32mPROCESSO CONCLUÍDO \033[0m";
 echo "";
-echo "\033[5;31mREINICIANDO EM DOIS MINUTOS. \033[0m";
+echo "\033[5;31mREINICIANDO EM 1 MINUTO. \033[0m";
 echo "":
 # --------------- Reiniciar Mac --------------- #
-sleep 120; sudo reboot
+sleep 60; sudo reboot
