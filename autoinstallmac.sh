@@ -45,7 +45,6 @@ brew install cargo-make;
 brew install --cask firefox;
 brew install exa;
 brew install git;
-brew install --cask google-chrome;
 brew install --cask i1profiler;
 brew install --cask iterm2;
 brew install --cask maccy;
