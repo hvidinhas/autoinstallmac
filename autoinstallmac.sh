@@ -68,6 +68,11 @@ brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
 
+#----------------- Instalar pip e pitube -----------------#
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py;
+python3 get-pip.py;
+
 
 # --------------- Baixar fonte para iTerm2 --------------- #
 brew tap homebrew/cask-fonts
