@@ -11,6 +11,8 @@ Script para uma instalação e configuração "automatizada" de todos os sofware
 
 ##### macOS Big Sur (versão 11.7.4)
 
+##### macOS Ventura (versão 13.5)
+
 ## Como usar
 
 Execute o comando abaixo no terminal do Mac
