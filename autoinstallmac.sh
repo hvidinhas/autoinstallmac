@@ -7,16 +7,9 @@ echo "";
 echo "\033[5;32mAUTO INSTALL MAC \033[0m";
 echo "";
 echo "";
-echo "";
-echo "\033[1;32mQUAL LOCAL VOCÊ ESTÁ?: \033[0m";
-echo "";
-echo "1 - HOME OFFICE";
-echo "2 - REMOTO";
-echo "":
-read opcao
 
 # --------------- Pedir senha do Admin antes --------------- #
-echo "\033[1;32mINSIRA SENHA DE ADMIN PARA INICIAR: \033[0m"
+echo "\033[5;32mINSIRA SENHA DE ADMIN PARA INICIAR: \033[0m"
 sudo -v
 
 # --------------- Manter permissão de admin até o fim do script --------------- #
@@ -51,6 +44,7 @@ brew install --cask maccy;
 brew install npm;
 brew install neovim;
 brew install node;
+brew install --cask notion;
 brew install --cask onyx;
 brew install rclone;
 brew install rust;
@@ -159,14 +153,6 @@ defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 echo ""
 echo "\033[5;32mRESTORE DE ARQUIVOS \033[0m"
 echo "" 
-
-sleep 2;
-
-case $opcao in
-    1)
-        if [[ $opcao == "1" ]]; then
-	echo "\033[5;32mRESTORE LOCAL DE PREFERENCIAS: \033[0m"
-    echo ""
         # restore de arquivos de preferencias
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
@@ -178,34 +164,6 @@ case $opcao in
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
         sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
-	else
-            echo "Opção inválida!"
-	fi
-        ;;
-     2)
-          if [[ $opcao="2" ]]; then
-    echo "\033[5;32mRESTORE REMOTO DE ARQUIVOS: \033[0m"
-    echo ""
-        # restore de arquivos de preferencias
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
-
-        # restore de arquivos de Application Support
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
-        sudo rsync -atrP srvadmin@caradati.ddnsking.com:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
-	else
-            echo "Opção inválida!"
-        fi
-        ;;
-    *)
-        echo "\033[5;31m OPÇÃO INVÁLIDA! Escolha entre HOME OFFICE ou EXTERNO. \033[0m"
-        ;;
-	esac
-
 # --------------- Organizar programas e atualizar a Dock --------------- #
 # RESET LAUCHPAD
 defaults write com.apple.dock ResetLaunchPad -bool true;
@@ -216,35 +174,6 @@ Killall Dock;
 sudo ln -s /Users/hvidinhas/Documents/Codes/BackupMac/backupmac.sh /usr/local/bin/backup;
 sudo chown -v hvidinhas:staff /usr/local/bin/backup;
 
-# --------------- Atualização de Sistema --------------- #
-echo "\033[1;32mDESEJA ATUALIZAR O MAC OS?: \033[0m"
-echo ""
-echo "s - SIM"
-echo "n - NÃO"
-echo ""
-read update
-
-case $update in
-    s)
-        if [[ $update == "s" ]]; then
-	echo -e "\033[5;32mATUALIZANDO MAC OS: \033[0m"
-    echo ""
-	sudo softwareupdate -ia;
-	else
-            echo "Opção inválida!"
-	fi
-        ;;
-    n)
-          if [[ $update="n" ]]; then
-	echo -e "\033[5;32mSEM ATUALIZAÇÃO \033[0m"
-    else
-            echo "Opção inválida!"
-        fi
-        ;;
-    *)
-        echo -e "\033[5;31m OPÇÃO INVÁLIDA! Escolha entre S ou N. \033[0m"
-        ;;
-esac
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 2;
 echo "";
