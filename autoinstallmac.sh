@@ -34,7 +34,6 @@ brew install --cask anydesk;
 brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
-brew install --cask caffeine;
 brew install cargo-make;
 brew install --cask firefox;
 brew install exa;
