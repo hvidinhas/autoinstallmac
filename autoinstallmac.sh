@@ -29,6 +29,7 @@ echo ""
 sleep 2;
 brew tap teamookla/speedtest;
 brew update;
+brew install --cask 1password;
 brew install --cask anydesk;
 brew install --cask appcleaner;
 brew install bat;
