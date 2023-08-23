@@ -46,7 +46,6 @@ brew install npm;
 brew install neovim;
 brew install node;
 brew install --cask notion;
-brew install --cask onyx;
 brew install --cask libreoffice;
 brew install rclone;
 brew install rust;
