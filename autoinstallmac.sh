@@ -35,6 +35,7 @@ brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
 brew install cargo-make;
+brew install --cask dropbox;
 brew install --cask firefox;
 brew install exa;
 brew install git;
@@ -62,6 +63,8 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
+brew install yt-dlp;
+brew install ffmpeg;
 
 #----------------- Instalar pip e pitube -----------------#
 
