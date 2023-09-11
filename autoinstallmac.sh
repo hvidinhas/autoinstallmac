@@ -35,7 +35,6 @@ brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
 brew install cargo-make;
-brew install --cask dropbox;
 brew install --cask firefox;
 brew install exa;
 brew install git;
@@ -65,12 +64,6 @@ brew install yarn;
 brew install wget;
 brew install yt-dlp;
 brew install ffmpeg;
-
-#----------------- Instalar pip e pitube -----------------#
-
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py;
-python3 get-pip.py;
-
 
 # --------------- Baixar fonte para iTerm2 --------------- #
 brew tap homebrew/cask-fonts
@@ -176,7 +169,9 @@ Killall Dock;
 
 # --------------- Criando links símbolicos --------------- #
 sudo ln -s /Users/hvidinhas/Documents/Codes/BackupMac/backupmac.sh /usr/local/bin/backup;
-sudo chown -v hvidinhas:staff /usr/local/bin/backup;
+sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
+sudo chmod -v 0775 /usr/local/bin/backup;
+sudo chmod -v 0775 /usr/local/bin/refresh; 
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 2;
@@ -184,7 +179,7 @@ echo "";
 echo "";
 echo "\033[1;32mPROCESSO CONCLUÍDO \033[0m";
 echo "";
-echo "\033[5;31mREINICIANDO EM 1 MINUTO. \033[0m";
+echo "\033[5;31mREINICIANDO EM 30 segundos. \033[0m";
 echo "":
 # --------------- Reiniciar Mac --------------- #
-sleep 60; sudo reboot
+sleep 30; sudo reboot
