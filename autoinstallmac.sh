@@ -31,6 +31,7 @@ brew tap teamookla/speedtest;
 brew update;
 brew install --cask 1password;
 brew install --cask anydesk;
+brew install --cask adguard;
 brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
