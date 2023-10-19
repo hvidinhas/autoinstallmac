@@ -141,22 +141,6 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 # DESLIGAR AVISO DE UPGRADE MONTEREY
 defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 
-# --------------- Restore de arquivos --------------- #
-
-echo ""
-echo "\033[5;32mRESTORE DE ARQUIVOS \033[0m"
-echo "" 
-        # restore de arquivos de preferencias
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.apple.dock.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.hnc.Discord.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.microsoft.VSCode.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.spotify.client.plist ~/Library/Preferences/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/;
-
-        # restore de arquivos de Application Support
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Dock ~/Library/Application\ Support/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/Spotify ~/Library/Application\ Support/;
-        sudo rsync -atrP srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Library/ApplicationSupport/iTerm2 ~/Library/Application\ Support/;
 # --------------- Organizar programas e atualizar a Dock --------------- #
 # RESET LAUCHPAD
 defaults write com.apple.dock ResetLaunchPad -bool true;
