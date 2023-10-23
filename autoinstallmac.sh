@@ -1,9 +1,9 @@
 #!bin/bash
-echo "\033[1;32mAntes de começar, crie uma nova aba no terminal e cole esse comando para evitar que o computador entre em sleep: \033[0m";
-echo "";
-echo "caffeinate -dm";
-sleep 15;
-echo "";
+#echo "\033[1;32mAntes de começar, crie uma nova aba no terminal e cole esse comando para evitar que o computador entre em sleep: \033[0m";
+#echo "";
+#echo "caffeinate -dm";
+#sleep 15;
+#echo "";
 echo "\033[5;32mAUTO INSTALL MAC \033[0m";
 echo "";
 echo "";
@@ -33,7 +33,6 @@ brew install --cask anydesk;
 brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
-brew install --cask bitwarden;
 brew install cargo-make;
 brew install --cask firefox;
 brew install exa;
