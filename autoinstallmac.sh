@@ -29,6 +29,7 @@ echo ""
 sleep 1;
 brew tap teamookla/speedtest;
 brew update;
+brew install --cask adobe-creative-cloud;
 brew install --cask anydesk;
 brew install --cask appcleaner;
 brew install bat;
