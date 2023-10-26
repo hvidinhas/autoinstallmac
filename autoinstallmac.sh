@@ -26,7 +26,7 @@ sleep 2;
 echo ""
 echo "\033[5;32mINSTALL APPS HOME BREW \033[0m"
 echo ""
-sleep 2;
+sleep 1;
 brew tap teamookla/speedtest;
 brew update;
 brew install --cask anydesk;
@@ -66,7 +66,7 @@ sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/mast
 open Downloads/MesloLGS\ NF\ Regular.ttf;
 
 # Tempo para instalar fonte antes de começar as mudanças
-sleep 20;
+sleep 15;
 
 # --------------- Modificações no Sistema --------------- #
 
@@ -140,12 +140,12 @@ defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 
 # --------------- Organizar programas e atualizar a Dock --------------- #
 # RESET LAUCHPAD
-defaults write com.apple.dock ResetLaunchPad -bool true;
+# defaults write com.apple.dock ResetLaunchPad -bool true;
 # REINICIAR DOCK
-Killall Dock;
+# Killall Dock;
 
 # --------------- Criando links símbolicos --------------- #
-sudo ln -s /Users/hvidinhas/Documents/Codes/BackupMac/backupmac.sh /usr/local/bin/backup;
+sudo ln -s /Users/hvidinhas/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
 sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/refresh; 
@@ -154,9 +154,9 @@ sudo chmod -v 0775 /usr/local/bin/refresh;
 sleep 2;
 echo "";
 echo "";
-echo "\033[1;32mPROCESSO CONCLUÍDO \033[0m";
+echo "\033[5;32mPROCESSO CONCLUÍDO \033[0m";
 echo "";
-echo "\033[5;31mREINICIANDO EM 30 segundos. \033[0m";
-echo "":
+#echo "\033[5;31mREINICIANDO EM 30 segundos. \033[0m";
+#echo "":
 # --------------- Reiniciar Mac --------------- #
-sleep 30; sudo reboot
+#sleep 30; sudo reboot
