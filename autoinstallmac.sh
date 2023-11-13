@@ -46,6 +46,7 @@ brew install neovim;
 brew install node;
 brew install rclone;
 brew install rust;
+brew install --cask spotify;
 brew install speedtest --force;
 brew install --cask syncovery;
 brew install python;
@@ -112,7 +113,7 @@ sudo pmset -a displaysleep 2;
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on;
 
 # MUDAR PARA LISTA DE USUARIO E SENHA LOGIN INICIAL
-sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -bool true;
+# sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -bool true;
 
 # FINDER - ICONES DE SERVIDORES E DRIVERS EXTERNOS
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true;
