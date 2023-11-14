@@ -40,6 +40,7 @@ brew install exa;
 brew install git;
 brew install --cask i1profiler;
 brew install --cask iterm2;
+brew install lazygit;
 brew install --cask maccy;
 brew install npm;
 brew install neovim;
