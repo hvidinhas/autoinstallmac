@@ -7,11 +7,9 @@ Script para uma instalação e configuração "automatizada" de todos os sofware
 
 ## Testada nas versões:
 
-##### macOS Montery (versão 12.6.3)
+##### macOS Montery (versão 12.7.1)
 
-##### macOS Big Sur (versão 11.7.4)
-
-##### macOS Ventura (versão 13.5)
+##### macOS Ventura (versão 13.6.1)
 
 ## Como usar
 
