@@ -56,20 +56,22 @@ brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask veracrypt;
 brew install --cask vlc;
+brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
 brew install yt-dlp;
 brew install ffmpeg;
+brew install --cask font-meslo-lg-nerd-font;
 
 # --------------- Baixar fonte para iTerm2 --------------- #
-brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font
+# brew tap homebrew/cask-fonts
+# brew install font-hack-nerd-font
 
-sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
-open Downloads/MesloLGS\ NF\ Regular.ttf;
+# sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
+# open Downloads/MesloLGS\ NF\ Regular.ttf;
 
 # Tempo para instalar fonte antes de começar as mudanças
-sleep 15;
+# sleep 15;
 
 # --------------- Modificações no Sistema --------------- #
 
@@ -150,16 +152,18 @@ defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 # --------------- Criando links símbolicos --------------- #
 sudo ln -s /Users/hvidinhas/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
 sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
+sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/legenda.sh legenda;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/refresh; 
+sudo chmod -v 0775 /usr/local/bin/legenda;
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 2;
 echo "";
 echo "";
-echo "\033[5;32mPROCESSO CONCLUÍDO \033[0m";
+echo "\033[5;31mPROCESSO CONCLUÍDO \033[0m";
 echo "";
-#echo "\033[5;31mREINICIANDO EM 30 segundos. \033[0m";
-#echo "":
+echo "\033[5;32mREINICIANDO EM 30 segundos. \033[0m";
+echo "":
 # --------------- Reiniciar Mac --------------- #
-#sleep 30; sudo reboot
+sleep 30; sudo reboot
