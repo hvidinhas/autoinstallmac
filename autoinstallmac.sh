@@ -52,6 +52,7 @@ brew install speedtest --force;
 brew install --cask syncovery;
 brew install python;
 brew install --cask qbittorrent;
+brew install --cask openoffice;
 brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask veracrypt;
@@ -62,17 +63,8 @@ brew install yarn;
 brew install wget;
 brew install yt-dlp;
 brew install ffmpeg;
+brew tap homebrew/cask-fonts;
 brew install --cask font-meslo-lg-nerd-font;
-
-# --------------- Baixar fonte para iTerm2 --------------- #
-# brew tap homebrew/cask-fonts
-# brew install font-hack-nerd-font
-
-# sudo wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
-# open Downloads/MesloLGS\ NF\ Regular.ttf;
-
-# Tempo para instalar fonte antes de começar as mudanças
-# sleep 15;
 
 # --------------- Modificações no Sistema --------------- #
 
