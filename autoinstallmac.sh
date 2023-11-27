@@ -55,6 +55,7 @@ brew install --cask qbittorrent;
 brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask veracrypt;
+brew install --cask visual-studio-code;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install yarn;
@@ -142,12 +143,6 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 
 # DESLIGAR AVISO DE UPGRADE MONTEREY
 defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
-
-# --------------- Organizar programas e atualizar a Dock --------------- #
-# RESET LAUCHPAD
-# defaults write com.apple.dock ResetLaunchPad -bool true;
-# REINICIAR DOCK
-# Killall Dock;
 
 # --------------- Criando links símbolicos --------------- #
 sudo ln -s /Users/hvidinhas/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
