@@ -1,9 +1,4 @@
 #!bin/bash
-#echo "\033[1;32mAntes de começar, crie uma nova aba no terminal e cole esse comando para evitar que o computador entre em sleep: \033[0m";
-#echo "";
-#echo "caffeinate -dm";
-#sleep 15;
-#echo "";
 echo "\033[5;32mAUTO INSTALL MAC \033[0m";
 echo "";
 echo "";
@@ -63,8 +58,6 @@ brew install yarn;
 brew install wget;
 brew install yt-dlp;
 brew install ffmpeg;
-brew tap homebrew/cask-fonts;
-brew install --cask font-meslo-lg-nerd-font;
 
 # --------------- Modificações no Sistema --------------- #
 
@@ -107,9 +100,6 @@ sudo pmset -a displaysleep 2;
 
 # FIREWALL LIGADO
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on;
-
-# MUDAR PARA LISTA DE USUARIO E SENHA LOGIN INICIAL
-# sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -bool true;
 
 # FINDER - ICONES DE SERVIDORES E DRIVERS EXTERNOS
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true;
