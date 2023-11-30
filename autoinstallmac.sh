@@ -47,7 +47,6 @@ brew install speedtest --force;
 brew install --cask syncovery;
 brew install python;
 brew install --cask qbittorrent;
-brew install --cask openoffice;
 brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask veracrypt;
