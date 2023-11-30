@@ -129,9 +129,11 @@ defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 sudo ln -s /Users/hvidinhas/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
 sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
 sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/legenda.sh legenda;
+sudo ln -v /Users/hvidinhas/Documents/Codes/Scripts/limpezaCanon limpezaCanon;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/refresh; 
 sudo chmod -v 0775 /usr/local/bin/legenda;
+sudo chmod -v 0775 /usr/local/bin/limpezaCanon;
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 2;
