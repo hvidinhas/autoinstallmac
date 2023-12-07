@@ -10,6 +10,9 @@ sudo -v
 # --------------- Manter permissão de admin até o fim do script --------------- #
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# --------------- Cópia da pasta documentos --------------- #
+scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
+
 # --------------- Instalação Homebrew --------------- #
 echo ""
 echo "\033[5;32mHOME BREW \033[0m"
@@ -30,7 +33,7 @@ brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
 brew install cargo-make;
-brew install --cask firefox;
+brew install --cask chromium;
 brew install exa;
 brew install git;
 brew install --cask i1profiler;
