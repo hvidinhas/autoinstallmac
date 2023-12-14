@@ -11,6 +11,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # --------------- Cópia da pasta documentos --------------- #
+echo "\033[5;32mCOPIANDO PASTA DOCUMENTS \033[0m"
 scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
 
 # --------------- Instalação Homebrew --------------- #
@@ -126,17 +127,22 @@ defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false;
 
 # DESLIGAR AVISO DE UPGRADE MONTEREY
-defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
+# defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 
 # --------------- Criando links símbolicos --------------- #
-sudo ln -s /Users/hvidinhas/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
-sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
-sudo ln -s /Users/hvidinhas/Documents/Codes/Scripts/legenda.sh legenda;
-sudo ln -v /Users/hvidinhas/Documents/Codes/Scripts/limpezaCanon limpezaCanon;
+sudo ln -s ~/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
+sudo ln -s ~/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
+sudo ln -s ~/Documents/Codes/Scripts/legenda.sh legenda;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/refresh; 
 sudo chmod -v 0775 /usr/local/bin/legenda;
-sudo chmod -v 0775 /usr/local/bin/limpezaCanon;
+
+# ------------- Copiando preferencias ---------------------- #
+echo "\033[5;31mCOPIANDO PASTA APPLICATION SUPPORT \033[0m";
+cp -rf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
+
+echo "\033[5;31mCOPIANDO PASTA PREFERENCES \033[0m";
+cp -rf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 2;
