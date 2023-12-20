@@ -39,7 +39,6 @@ brew install exa;
 brew install git;
 brew install --cask i1profiler;
 brew install --cask iterm2;
-brew install lazygit;
 brew install --cask maccy;
 brew install npm;
 brew install neovim;
@@ -54,7 +53,6 @@ brew install --cask qbittorrent;
 brew install --cask teamviewer;
 brew install --cask the-unarchiver;
 brew install --cask veracrypt;
-brew install --cask visual-studio-code;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install yarn;
@@ -68,8 +66,6 @@ echo ""
 echo "\033[5;32mAJUSTES DE SISTEMA \033[0m"
 echo "" 
 sleep 2;
-# MINIMIZAR OS PROGRAMAS NA DOCK
-defaults write com.apple.dock mineffect -string suck;
 
 # MODIFICAR O NOME DO COMPUTADOR
 sudo scutil --set ComputerName "CARA DA TI";
@@ -126,8 +122,6 @@ defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 # ABRIR O TEXTEDIT JA COM UM ARQUIVO NOVO
 defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false;
 
-# DESLIGAR AVISO DE UPGRADE MONTEREY
-# defaults write com.apple.systempreferences AttentionPrefBundleIDs 0;
 
 # --------------- Criando links símbolicos --------------- #
 sudo ln -s ~/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
