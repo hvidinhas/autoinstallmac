@@ -57,8 +57,6 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
-brew install yt-dlp;
-brew install ffmpeg;
 
 # --------------- Modificações no Sistema --------------- #
 
@@ -126,23 +124,19 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 # --------------- Criando links símbolicos --------------- #
 sudo ln -s ~/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
 sudo ln -s ~/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
-sudo ln -s ~/Documents/Codes/Scripts/legenda.sh legenda;
+sudo ln -s ~/Documents/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/refresh; 
 sudo chmod -v 0775 /usr/local/bin/legenda;
 
 # ------------- Copiando preferencias ---------------------- #
-echo "\033[5;31mCOPIANDO PASTA APPLICATION SUPPORT \033[0m";
 cp -rf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
-
-echo "\033[5;31mCOPIANDO PASTA PREFERENCES \033[0m";
 cp -rf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 2;
 echo "";
-echo "";
-echo "\033[5;31mPROCESSO CONCLUÍDO \033[0m";
+echo "\033[5;32mPROCESSO CONCLUÍDO \033[0m";
 echo "";
 echo "\033[5;32mREINICIANDO EM 30 segundos. \033[0m";
 echo "":
