@@ -34,7 +34,7 @@ brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
 brew install cargo-make;
-brew install --cask chromium;
+brew install --cask eloston-chromium;
 brew install exa;
 brew install git;
 brew install --cask i1profiler;
