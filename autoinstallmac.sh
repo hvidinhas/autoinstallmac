@@ -3,6 +3,12 @@ echo "\033[5;32mAUTO INSTALL MAC \033[0m";
 echo "";
 echo "";
 
+echo "Abra uma outra aba e digite o comando";
+echo "";
+echo "caffeinate -d";
+
+sleep 10;
+
 # --------------- Pedir senha do Admin antes --------------- #
 echo "\033[5;32mINSIRA SENHA DE ADMIN PARA INICIAR: \033[0m"
 sudo -v
@@ -31,9 +37,12 @@ brew update;
 brew install --cask adobe-creative-cloud;
 brew install --cask appcleaner;
 brew install bat;
+brew install --cask bitwarden;
 brew install --cask balenaetcher;
 brew install cargo-make;
-brew install --cask eloston-chromium;
+brew install --cask cocktail;
+brew install --cask google-chrome;
+brew install --cask domzilla-caffeine;
 brew install exa;
 brew install git;
 brew install --cask i1profiler;
@@ -42,6 +51,7 @@ brew install --cask maccy;
 brew install npm;
 brew install neovim;
 brew install node;
+brew install --cask onlyoffice;
 brew install rclone;
 brew install rust;
 brew install --cask spotify;
@@ -56,6 +66,7 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
+brew install --cask whatsapp;
 
 # --------------- Modificações no Sistema --------------- #
 
