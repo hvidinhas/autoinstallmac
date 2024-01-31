@@ -64,6 +64,7 @@ brew install --cask the-unarchiver;
 brew install --cask veracrypt;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
+brew install --cask visual-studio-code;
 brew install yarn;
 brew install wget;
 brew install --cask whatsapp;
