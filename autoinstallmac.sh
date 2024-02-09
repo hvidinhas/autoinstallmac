@@ -40,7 +40,6 @@ brew install bat;
 brew install --cask bitwarden;
 brew install --cask balenaetcher;
 brew install cargo-make;
-brew install --cask cocktail;
 brew install --cask google-chrome;
 brew install exa;
 brew install git;
