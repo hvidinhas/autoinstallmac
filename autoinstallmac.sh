@@ -17,8 +17,8 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # --------------- Cópia da pasta documentos --------------- #
-# echo "\033[5;32mCOPIANDO PASTA DOCUMENTS \033[0m"
-# scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
+echo "\033[5;32mCOPIANDO PASTA DOCUMENTS \033[0m"
+scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
 
 # --------------- Instalação Homebrew --------------- #
 echo ""
@@ -49,6 +49,7 @@ brew install --cask maccy;
 brew install npm;
 brew install neovim;
 brew install node;
+brew install --cask rectangle;
 brew install rclone;
 brew install rust;
 brew install --cask spotify;
