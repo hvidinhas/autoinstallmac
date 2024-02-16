@@ -37,11 +37,9 @@ brew update;
 brew install --cask adobe-creative-cloud;
 brew install --cask appcleaner;
 brew install bat;
-brew install --cask bitwarden;
 brew install --cask balenaetcher;
 brew install cargo-make;
 brew install --cask google-chrome;
-brew install exa;
 brew install git;
 brew install --cask i1profiler;
 brew install --cask iterm2;
@@ -66,6 +64,10 @@ brew install --cask visual-studio-code;
 brew install yarn;
 brew install wget;
 brew install --cask whatsapp;
+
+# --------------- Instalação do EXA via cargo --------------- #
+
+cargo install exa;
 
 # --------------- Modificações no Sistema --------------- #
 
