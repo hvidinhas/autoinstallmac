@@ -47,7 +47,6 @@ brew install --cask maccy;
 brew install npm;
 brew install neovim;
 brew install node;
-brew install --cask rectangle;
 brew install rclone;
 brew install rust;
 brew install --cask spotify;
