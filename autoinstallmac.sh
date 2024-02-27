@@ -135,9 +135,11 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 sudo ln -s ~/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
 sudo ln -s ~/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
 sudo ln -s ~/Documents/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
+sudo ln -s ~/Documents/Codes/Scripts/limpezaCanon.sh /usr/local/bin/limpaSD;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/refresh; 
 sudo chmod -v 0775 /usr/local/bin/legenda;
+sudo chmod -v 0775 /usr/local/bin/limpaSD;
 
 # ------------- Copiando preferencias ---------------------- #
 cp -rf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
