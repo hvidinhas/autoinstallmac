@@ -41,7 +41,7 @@ brew install --cask balenaetcher;
 brew install cargo-make;
 brew install --cask google-chrome;
 brew install git;
-brew install --cask i1profiler;
+brew install --cask ~/Documents/HomeBrew/i1profiler.rb;
 brew install --cask iterm2;
 brew install --cask maccy;
 brew install npm;
