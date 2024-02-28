@@ -41,7 +41,6 @@ brew install --cask balenaetcher;
 brew install cargo-make;
 brew install --cask google-chrome;
 brew install git;
-brew install --cask ~/Documents/HomeBrew/i1profiler.rb;
 brew install --cask iterm2;
 brew install --cask maccy;
 brew install npm;
@@ -63,16 +62,21 @@ brew install --cask visual-studio-code;
 brew install yarn;
 brew install wget;
 brew install --cask whatsapp;
+brew install --cask zed;
 
 # --------------- Instalação do EXA via cargo --------------- #
 
 cargo install exa;
 
-# --------------- Modificações no Sistema --------------- #
+# ------ Instalação da versão específica do i1Profiler ------ #
+
+sudo installer -pkg ~/Documents/Instaladores/i1Profiler_v3.7.1.pkg -target /Applications
+
+# ----------------- Modificações no Sistema ---------------- #
 
 echo ""
 echo "\033[5;32mAJUSTES DE SISTEMA \033[0m"
-echo "" 
+echo ""
 sleep 2;
 
 # MODIFICAR O NOME DO COMPUTADOR
@@ -137,7 +141,7 @@ sudo ln -s ~/Documents/Codes/Scripts/refresh.sh /usr/local/bin/refresh;
 sudo ln -s ~/Documents/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
 sudo ln -s ~/Documents/Codes/Scripts/limpezaCanon.sh /usr/local/bin/limpaSD;
 sudo chmod -v 0775 /usr/local/bin/backup;
-sudo chmod -v 0775 /usr/local/bin/refresh; 
+sudo chmod -v 0775 /usr/local/bin/refresh;
 sudo chmod -v 0775 /usr/local/bin/legenda;
 sudo chmod -v 0775 /usr/local/bin/limpaSD;
 
