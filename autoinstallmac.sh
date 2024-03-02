@@ -65,10 +65,6 @@ brew install wget;
 brew install --cask whatsapp;
 brew install --cask zed;
 
-# --------------- Instalação do EXA via cargo --------------- #
-
-cargo install exa;
-
 # ------ Instalação da versão específica do i1Profiler ------ #
 
 sudo installer -pkg ~/Documents/Instaladores/i1Profiler_v3.7.1.pkg -target /Applications
