@@ -48,6 +48,7 @@ brew install neovim;
 brew install node;
 brew install rclone;
 brew install rust;
+brew install --cask rectangle;
 brew install --cask spotify;
 brew install speedtest --force;
 brew install --cask syncovery;
