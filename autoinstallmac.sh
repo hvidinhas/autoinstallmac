@@ -61,6 +61,7 @@ brew install --cask vmware-fusion;
 brew install yarn;
 brew install wget;
 brew install --cask whatsapp;
+brew install --cask zed;
 
 # ------ Instalação da versão específica do i1Profiler ------ #
 
