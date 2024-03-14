@@ -144,12 +144,28 @@ sudo chmod -v 0775 /usr/local/bin/limpaSD;
 cp -rf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
 cp -rf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
 
+# --------------- Instalando Oh My ZSH --------------- #
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+
+# --------------- Instalando zsh-autosuggestions --------------- #
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions;
+
+# --------------- Instalando Powerlevel10k --------------- #
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k;
+
+# --------------- Copiando arquivo .zshrc para raiz --------------- #
+cp -f ~/Documents/Arquivos/.zshrc ~;
+
+# --------------- Baixando MesloLGS --------------- #
+wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
+open ~/Downloads/MesloLGS\ NF\ Regular.ttf;
+
 # --------------- Conclusão do script e reinicio do Mac --------------- #
-sleep 2;
+sleep 15;
 echo "";
 echo "\033[5;32mPROCESSO CONCLUÍDO \033[0m";
 echo "";
-echo "\033[5;32mREINICIANDO EM 30 segundos. \033[0m";
+echo "\033[5;32mREINICIANDO EM 15 segundos. \033[0m";
 echo "":
 # --------------- Reiniciar Mac --------------- #
-sleep 30; sudo reboot
+sleep 15; sudo reboot
