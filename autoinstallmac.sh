@@ -156,6 +156,12 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # --------------- Copiando arquivo .zshrc para raiz --------------- #
 cp -f ~/Documents/Arquivos/.zshrc ~;
 
+# --------------- Instalando EXA via cargo --------------- #
+cargo install exa;
+
+# --------------- Copiando arquivo exa para PATH --------------- #
+sudo cp -f ~/Documents/Arquivos/exa /etc/paths.d
+
 # --------------- Baixando MesloLGS --------------- #
 wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
 open ~/Downloads/MesloLGS\ NF\ Regular.ttf;
