@@ -51,6 +51,7 @@ brew install rust;
 brew install --cask rectangle;
 brew install speedtest --force;
 brew install --cask syncovery;
+brew install --cask spotify;
 brew install python;
 brew install --cask qbittorrent;
 brew install --cask teamviewer;
@@ -145,15 +146,6 @@ cp -rf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
 
 # --------------- Instalando Oh My ZSH --------------- #
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-
-# --------------- Instalando zsh-autosuggestions --------------- #
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions;
-
-# --------------- Instalando Powerlevel10k --------------- #
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k;
-
-# --------------- Copiando arquivo .zshrc para raiz --------------- #
-cp -f ~/Documents/Arquivos/.zshrc ~;
 
 # --------------- Instalando EXA via cargo --------------- #
 cargo install exa;
