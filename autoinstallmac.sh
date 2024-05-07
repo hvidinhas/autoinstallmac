@@ -38,28 +38,23 @@ brew install --cask adobe-creative-cloud;
 brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
-brew install cargo-make;
 brew install --cask google-chrome;
 brew install git;
 brew install --cask iterm2;
 brew install --cask maccy;
-brew install npm;
 brew install neovim;
-brew install node;
 brew install rclone;
-brew install rust;
 brew install --cask rectangle;
 brew install speedtest --force;
 brew install --cask syncovery;
 brew install --cask spotify;
-brew install python;
 brew install --cask qbittorrent;
 brew install --cask teamviewer;
 brew install --cask the-unarchiver;
+brew install --cask visual-studio-code;
 brew install --cask veracrypt;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
-brew install yarn;
 brew install wget;
 brew install --cask whatsapp;
 
@@ -143,15 +138,6 @@ sudo chmod -v 0775 /usr/local/bin/limpaSD;
 # ------------- Copiando preferencias ---------------------- #
 cp -rf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
 cp -rf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
-
-# --------------- Instalando Oh My ZSH --------------- #
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-
-# --------------- Instalando EXA via cargo --------------- #
-cargo install exa;
-
-# --------------- Copiando arquivo exa para PATH --------------- #
-sudo cp -f ~/Documents/Arquivos/exa /etc/paths.d
 
 # --------------- Baixando MesloLGS --------------- #
 wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
