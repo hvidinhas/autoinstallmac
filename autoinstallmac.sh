@@ -56,7 +56,6 @@ brew install --cask veracrypt;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install wget;
-brew install --cask whatsapp;
 
 # ------ Instalação da versão específica do i1Profiler ------ #
 
@@ -136,8 +135,8 @@ sudo chmod -v 0775 /usr/local/bin/legenda;
 sudo chmod -v 0775 /usr/local/bin/limpaSD;
 
 # ------------- Copiando preferencias ---------------------- #
-cp -rf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
-cp -rf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
+cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
+cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
 
 # --------------- Baixando MesloLGS --------------- #
 wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
