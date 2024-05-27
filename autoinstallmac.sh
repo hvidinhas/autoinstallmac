@@ -44,7 +44,6 @@ brew install --cask iterm2;
 brew install --cask maccy;
 brew install neovim;
 brew install rclone;
-brew install --cask rectangle;
 brew install speedtest --force;
 brew install --cask syncovery;
 brew install --cask spotify;
