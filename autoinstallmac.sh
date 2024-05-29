@@ -40,7 +40,6 @@ brew install bat;
 brew install --cask balenaetcher;
 brew install --cask google-chrome;
 brew install git;
-brew install --cask iterm2;
 brew install --cask maccy;
 brew install neovim;
 brew install rclone;
@@ -54,6 +53,7 @@ brew install --cask visual-studio-code;
 brew install --cask veracrypt;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
+brew install --cask warp;
 brew install wget;
 
 # ------ Instalação da versão específica do i1Profiler ------ #
