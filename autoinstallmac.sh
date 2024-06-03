@@ -1,12 +1,7 @@
-#!bin/bash
+!bin/bash
 echo "\033[5;32mAUTO INSTALL MAC \033[0m";
 echo "";
 echo "";
-
-echo "Abra uma outra aba e digite o comando";
-echo "";
-echo "caffeinate -d";
-
 sleep 5;
 
 # --------------- Pedir senha do Admin antes --------------- #
@@ -39,7 +34,9 @@ brew install --cask appcleaner;
 brew install bat;
 brew install --cask balenaetcher;
 brew install --cask google-chrome;
+brew install eza;
 brew install git;
+brew install --cask iterm2;
 brew install --cask maccy;
 brew install neovim;
 brew install rclone;
@@ -53,11 +50,22 @@ brew install --cask visual-studio-code;
 brew install --cask veracrypt;
 brew install --cask vlc;
 brew install --cask vmware-fusion;
-brew install --cask warp;
 brew install wget;
 
-# ------ Instalação da versão específica do i1Profiler ------ #
+# ---------- Instalando Powerlevel10k ------------- #
+brew install --cask font-meslo-for-powerlevel10k;
+brew install powerlevel10k;
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
 
+# -------- Instalando AutoSuggestions ------------- #
+brew install zsh-autosuggestions;
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc;
+
+# -------- Instalando zsh-syntax-highlighting ------- #
+brew install zsh-syntax-highlighting;
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc;
+
+# ------ Instalação da versão específica do i1Profiler ------ #
 sudo installer -pkg ~/Documents/Instaladores/i1Profiler_v3.7.1.pkg -target /Applications
 
 # ----------------- Modificações no Sistema ---------------- #
@@ -136,10 +144,6 @@ sudo chmod -v 0775 /usr/local/bin/limpaSD;
 # ------------- Copiando preferencias ---------------------- #
 cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
 cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
-
-# --------------- Baixando MesloLGS --------------- #
-wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf;
-open ~/Downloads/MesloLGS\ NF\ Regular.ttf;
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 15;
