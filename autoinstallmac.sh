@@ -75,7 +75,7 @@ echo ""
 sleep 2;
 
 # MODIFICAR O NOME DO COMPUTADOR
-sudo scutil --set ComputerName "CARA DA TI";
+sudo scutil --set ComputerName "MACBOOK HEITOR";
 
 # LIGAR TAP TO CLICK TRACKPAD
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true;
@@ -140,7 +140,7 @@ sudo chmod -v 0775 /usr/local/bin/limpaSD;
 
 # ------------- Copiando preferencias ---------------------- #
 cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
-cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences;
+cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences; 
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 15;
