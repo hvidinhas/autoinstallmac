@@ -51,6 +51,9 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install wget;
 
+# ---------- Instalando Oh My Zsh ------------- #
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+
 # ---------- Instalando Powerlevel10k ------------- #
 brew install --cask font-meslo-for-powerlevel10k;
 brew install powerlevel10k;
