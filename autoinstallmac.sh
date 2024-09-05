@@ -134,9 +134,9 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 
 
 # --------------- Criando links símbolicos --------------- #
-sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
-sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
-sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/limpasd.sh /usr/local/bin/limpaSD;
+sudo ln -s ~/Documents/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
+sudo ln -s ~/Documents/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
+sudo ln -s ~/Documents/Codes/Scripts/limpasd.sh /usr/local/bin/limpaSD;
 sudo chmod -v 0775 /usr/local/bin/backup;
 sudo chmod -v 0775 /usr/local/bin/legenda;
 sudo chmod -v 0775 /usr/local/bin/limpaSD;
