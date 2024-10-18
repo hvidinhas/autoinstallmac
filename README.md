@@ -9,7 +9,12 @@ Script para uma instalação e configuração "automatizada" de todos os sofware
 
 ##### macOS Montery (versão 12.7.6)
 
-##### macOS Ventura (versão 13.6.9)
+##### macOS Ventura (versão 13.7)
+
+##### macOS Sonoma (versão 14.7)
+
+##### macOS Sequoia (versão 15.0)
+
 
 ## Como usar
 
