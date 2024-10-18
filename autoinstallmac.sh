@@ -51,21 +51,23 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install wget;
 
+
 # ---------- Instalando Oh My Zsh ------------- #
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 
 # ---------- Instalando Powerlevel10k ------------- #
-brew install --cask font-meslo-for-powerlevel10k;
-brew install powerlevel10k;
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
+# brew install --cask font-meslo-for-powerlevel10k;
+# brew install powerlevel10k;
+# echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
 
 # -------- Instalando AutoSuggestions ------------- #
-brew install zsh-autosuggestions;
-echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc;
+# brew install zsh-autosuggestions;
+# echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc;
 
 # -------- Instalando zsh-syntax-highlighting ------- #
-brew install zsh-syntax-highlighting;
-echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc;
+# brew install zsh-syntax-highlighting;
+# echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc;
+
 
 # ------ Instalação da versão específica do i1Profiler ------ #
 sudo installer -pkg ~/Documents/Instaladores/i1Profiler_v3.7.1.pkg -target /Applications
