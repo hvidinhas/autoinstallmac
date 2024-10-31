@@ -53,7 +53,7 @@ brew install wget;
 
 
 # ---------- Instalando Oh My Zsh ------------- #
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 
 # ---------- Instalando Powerlevel10k ------------- #
 # brew install --cask font-meslo-for-powerlevel10k;
@@ -61,12 +61,12 @@ brew install wget;
 # echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
 
 # -------- Instalando AutoSuggestions ------------- #
-# brew install zsh-autosuggestions;
-# echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc;
+brew install zsh-autosuggestions;
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc;
 
 # -------- Instalando zsh-syntax-highlighting ------- #
-# brew install zsh-syntax-highlighting;
-# echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc;
+brew install zsh-syntax-highlighting;
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc;
 
 
 # ------ Instalação da versão específica do i1Profiler ------ #
@@ -148,11 +148,11 @@ cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Suppor
 cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences; 
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
-sleep 15;
+sleep 10;
 echo "";
 echo "\033[5;32mPROCESSO CONCLUÍDO \033[0m";
 echo "";
-echo "\033[5;32mREINICIANDO EM 15 segundos. \033[0m";
+echo "\033[5;32mREINICIANDO EM 10 segundos. \033[0m";
 echo "":
 # --------------- Reiniciar Mac --------------- #
 sleep 15; sudo reboot
