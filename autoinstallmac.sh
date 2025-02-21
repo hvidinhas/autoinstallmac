@@ -37,6 +37,7 @@ brew install eza;
 brew install git;
 brew install --cask iterm2;
 brew install --cask maccy;
+brew install --cask mos;
 brew install neovim;
 brew install rclone;
 brew install speedtest --force;
