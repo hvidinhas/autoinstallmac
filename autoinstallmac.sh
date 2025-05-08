@@ -11,10 +11,6 @@ sudo -v
 # --------------- Manter permissão de admin até o fim do script --------------- #
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# --------------- Cópia da pasta documentos --------------- #
-# echo "\033[5;32mCOPIANDO PASTA DOCUMENTS \033[0m"
-# scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
-
 # --------------- Instalação Homebrew --------------- #
 echo ""
 echo "\033[5;32mHOME BREW \033[0m"
@@ -58,8 +54,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # ---------- Instalando Powerlevel10k ------------- #
 brew install --cask font-meslo-for-powerlevel10k;
-# brew install powerlevel10k;
-# echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
+brew install powerlevel10k;
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
 
 # -------- Instalando AutoSuggestions ------------- #
 brew install zsh-autosuggestions;
@@ -134,15 +130,6 @@ defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 
 # ABRIR O TEXTEDIT JA COM UM ARQUIVO NOVO
 defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false;
-
-
-# --------------- Criando links símbolicos --------------- #
-# sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
-# sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
-# sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/horadedormir.sh /usr/local/bin/horadedormir;
-# sudo chmod -v 0775 /usr/local/bin/backup; 
-# sudo chmod -v 0775 /usr/local/bin/legenda;
-# sudo chmod -v 0775 /usr/local/bin/horadedormir;
 
 # ------------- Copiando preferencias ---------------------- #
 # cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
