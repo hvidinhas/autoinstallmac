@@ -12,8 +12,8 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # --------------- Cópia da pasta documentos --------------- #
-echo "\033[5;32mCOPIANDO PASTA DOCUMENTS \033[0m"
-scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
+# echo "\033[5;32mCOPIANDO PASTA DOCUMENTS \033[0m"
+# scp -pr srvadmin@192.168.15.10:/home/srvadmin/bifrost/Backups/hvidinhas/Documents ~/
 
 # --------------- Instalação Homebrew --------------- #
 echo ""
@@ -57,7 +57,7 @@ brew install wget;
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 
 # ---------- Instalando Powerlevel10k ------------- #
-# brew install --cask font-meslo-for-powerlevel10k;
+brew install --cask font-meslo-for-powerlevel10k;
 # brew install powerlevel10k;
 # echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
 
@@ -71,7 +71,7 @@ echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlight
 
 
 # ------ Instalação da versão específica do i1Profiler ------ #
-sudo installer -pkg ~/Documents/Instaladores/i1Profiler_v3.7.1.pkg -target /Applications
+# sudo installer -pkg ~/Documents/Instaladores/i1Profiler_v3.7.1.pkg -target /Applications
 
 # ----------------- Modificações no Sistema ---------------- #
 
@@ -137,16 +137,16 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 
 
 # --------------- Criando links símbolicos --------------- #
-sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
-sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
-sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/horadedormir.sh /usr/local/bin/horadedormir;
-sudo chmod -v 0775 /usr/local/bin/backup;
-sudo chmod -v 0775 /usr/local/bin/legenda;
-sudo chmod -v 0775 /usr/local/bin/horadedormir;
+# sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Backup-Mac/backupmac.sh /usr/local/bin/backup;
+# sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/legenda.sh /usr/local/bin/legenda;
+# sudo ln -s ~/Google\ Drive/My\ Drive/Codes/Scripts/horadedormir.sh /usr/local/bin/horadedormir;
+# sudo chmod -v 0775 /usr/local/bin/backup; 
+# sudo chmod -v 0775 /usr/local/bin/legenda;
+# sudo chmod -v 0775 /usr/local/bin/horadedormir;
 
 # ------------- Copiando preferencias ---------------------- #
-cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
-cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences; 
+# cp -vrf ~/Documents/Arquivos/Application\ Support/ ~/Library/Application\ Support;
+# cp -vrf ~/Documents/Arquivos/Preferences/ ~/Library/Preferences; 
 
 # --------------- Conclusão do script e reinicio do Mac --------------- #
 sleep 10;
