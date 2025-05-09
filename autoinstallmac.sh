@@ -48,15 +48,6 @@ brew install --cask vlc;
 brew install --cask vmware-fusion;
 brew install wget;
 
-
-# ---------- Instalando Oh My Zsh ------------- #
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-
-# ---------- Instalando Powerlevel10k ------------- #
-brew install --cask font-meslo-for-powerlevel10k;
-brew install powerlevel10k;
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc;
-
 # -------- Instalando AutoSuggestions ------------- #
 brew install zsh-autosuggestions;
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc;
